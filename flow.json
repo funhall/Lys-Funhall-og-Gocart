@@ -395,6 +395,7 @@
             }
         ],
         "env": [],
+        "meta": {},
         "color": "#DDAA99",
         "outputLabels": [
             "Lap to go",
@@ -11208,7 +11209,8 @@
             "30e565576e90e0bf",
             "c85d81cd36277660",
             "b41f470a.a51d08",
-            "eae84303eb0599e8"
+            "eae84303eb0599e8",
+            "994a571828e55e69"
         ],
         "x": 3655,
         "y": 120,
@@ -11460,11 +11462,11 @@
         "width": 6,
         "height": 1,
         "name": "Top days best lap",
-        "label": "<font size = 6>{{msg.label}} ",
-        "format": "<font size = 6> : {{msg.lap}} ",
+        "label": "<font size = 6>Best of day :",
+        "format": "<font size = 6> {{msg.bestday}} ",
         "layout": "row-center",
-        "x": 2770,
-        "y": 440,
+        "x": 2670,
+        "y": 1020,
         "wires": []
     },
     {
@@ -11654,7 +11656,7 @@
         "wires": [
             [
                 "5e738c9f96cb1228",
-                "b354e762c512616d"
+                "8a1445f3284d8f32"
             ]
         ]
     },
@@ -11756,6 +11758,13 @@
                 "pt": "msg",
                 "to": "",
                 "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "00:00",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -11965,23 +11974,6 @@
         "links": [],
         "x": 245,
         "y": 200,
-        "wires": []
-    },
-    {
-        "id": "97cde17725b2fa77",
-        "type": "debug",
-        "z": "07816be5df0ddf81",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 980,
         "wires": []
     },
     {
@@ -12887,7 +12879,7 @@
         "z": "07816be5df0ddf81",
         "g": "64b686b8247fcf43",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13620,6 +13612,13 @@
                 "pt": "msg",
                 "to": "lap1",
                 "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "bestlap1",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
             }
         ],
         "action": "",
@@ -13627,7 +13626,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1930,
+        "x": 1840,
         "y": 140,
         "wires": [
             [
@@ -14421,7 +14420,8 @@
         "y": 560,
         "wires": [
             [
-                "0226dc82e79cf02b"
+                "0226dc82e79cf02b",
+                "7c1f5571f55ce217"
             ]
         ]
     },
@@ -20397,12 +20397,14 @@
         "z": "07816be5df0ddf81",
         "name": "Kill i Best laptime",
         "links": [
-            "15d5dc8b.91e1c3"
+            "37a5ebc5d7947f26"
         ],
-        "x": 1395,
-        "y": 1040,
+        "x": 1975,
+        "y": 1020,
         "wires": [
-            []
+            [
+                "dc82c8cb6dbc61ef"
+            ]
         ]
     },
     {
@@ -20410,7 +20412,9 @@
         "type": "link out",
         "z": "07816be5df0ddf81",
         "name": "heat time",
-        "links": [],
+        "links": [
+            "2547437f916ba2a9"
+        ],
         "x": 4615,
         "y": 760,
         "wires": []
@@ -21138,7 +21142,7 @@
         "type": "debug",
         "z": "f33f01041fa1256b",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -21155,7 +21159,7 @@
         "type": "debug",
         "z": "f33f01041fa1256b",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -21251,6 +21255,449 @@
         "wires": [
             [
                 "1c95fad061a25504"
+            ]
+        ]
+    },
+    {
+        "id": "994a571828e55e69",
+        "type": "link in",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "links": [
+            "b354e762c512616d"
+        ],
+        "x": 1975,
+        "y": 1080,
+        "wires": [
+            [
+                "7229731471032c04"
+            ]
+        ]
+    },
+    {
+        "id": "8a1445f3284d8f32",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "msg",
+                "to": "00:00",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3480,
+        "y": 140,
+        "wires": [
+            [
+                "b354e762c512616d"
+            ]
+        ]
+    },
+    {
+        "id": "dc82c8cb6dbc61ef",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "msg",
+                "to": "bestday",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2140,
+        "y": 1000,
+        "wires": [
+            [
+                "a7fa814ee201aa65"
+            ]
+        ]
+    },
+    {
+        "id": "7c1f5571f55ce217",
+        "type": "switch",
+        "z": "f33f01041fa1256b",
+        "name": "",
+        "property": "bestday",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "bestlap1",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap2",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap3",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap4",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap5",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap6",
+                "vt": "global"
+            },
+            {
+                "t": "gt",
+                "v": "bestlap7",
+                "vt": "global"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 8,
+        "x": 3190,
+        "y": 720,
+        "wires": [
+            [
+                "e046d42c39171817"
+            ],
+            [
+                "4b30d4098029b882"
+            ],
+            [
+                "38ec16bb83b84123"
+            ],
+            [
+                "82f41c562ed4e58c"
+            ],
+            [
+                "b2db8aba939b0d04"
+            ],
+            [
+                "a09af0fb377fcae0"
+            ],
+            [
+                "939bb82162fb2fad"
+            ],
+            [
+                "a5463d147848289e"
+            ]
+        ]
+    },
+    {
+        "id": "e046d42c39171817",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap1",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 620,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "9c26b302460d3be2",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "msg",
+                "to": "bestday",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3720,
+        "y": 720,
+        "wires": [
+            [
+                "a528e2b55607c6ca"
+            ]
+        ]
+    },
+    {
+        "id": "4b30d4098029b882",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap2",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 660,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "38ec16bb83b84123",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap3",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 700,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "82f41c562ed4e58c",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap4",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 740,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "b2db8aba939b0d04",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap5",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 780,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "a09af0fb377fcae0",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap6",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 820,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "939bb82162fb2fad",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap7",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 860,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "a528e2b55607c6ca",
+        "type": "debug",
+        "z": "f33f01041fa1256b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3910,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a5463d147848289e",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "name": "Set",
+        "rules": [
+            {
+                "t": "set",
+                "p": "bestday",
+                "pt": "global",
+                "to": "bestlap1",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 3370,
+        "y": 900,
+        "wires": [
+            [
+                "9c26b302460d3be2"
+            ]
+        ]
+    },
+    {
+        "id": "a7fa814ee201aa65",
+        "type": "moment",
+        "z": "07816be5df0ddf81",
+        "name": "Format time",
+        "topic": "",
+        "input": "payload",
+        "inputType": "msg",
+        "inTz": "Africa/Abidjan",
+        "adjAmount": 0,
+        "adjType": "milliseconds",
+        "adjDir": "add",
+        "format": "mm:ss",
+        "locale": "en-US",
+        "output": "payload",
+        "outputType": "msg",
+        "outTz": "Europe/Copenhagen",
+        "x": 2350,
+        "y": 1000,
+        "wires": [
+            [
+                "7229731471032c04"
             ]
         ]
     }
