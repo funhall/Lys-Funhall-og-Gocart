@@ -1,4 +1,4 @@
-delete_this
+Ny installation der virker
 ===========
 
 ### About

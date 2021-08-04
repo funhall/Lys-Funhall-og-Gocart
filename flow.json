@@ -11906,9 +11906,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 320,
+        "x": 240,
         "y": 620,
         "wires": [
             [
@@ -13026,7 +13025,7 @@
         "width": 5,
         "height": 1,
         "name": "1 antal boost",
-        "label": "<font size = 8>Antal boost",
+        "label": "<font size = 8>Boost",
         "format": "<font size = 8>{{msg.payload}}",
         "layout": "row-spread",
         "x": 470,
@@ -15274,8 +15273,8 @@
         "order": 10,
         "width": "1",
         "height": "1",
-        "passthru": false,
-        "label": "Cart1",
+        "passthru": true,
+        "label": "Cart1w",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background}}",
@@ -15283,11 +15282,11 @@
         "payload": "",
         "payloadType": "date",
         "topic": "",
-        "x": 510,
+        "x": 420,
         "y": 620,
         "wires": [
             [
-                "edaf04540595f809"
+                "aec811673b161c7c"
             ]
         ]
     },
@@ -15503,8 +15502,7 @@
         "y": 580,
         "wires": [
             [
-                "c485f210c983cf62",
-                "8917d1f159e63cae"
+                "c485f210c983cf62"
             ]
         ]
     },
@@ -15527,7 +15525,6 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 790,
         "y": 520,
@@ -15566,8 +15563,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 790,
-        "y": 800,
+        "x": 770,
+        "y": 780,
         "wires": [
             [
                 "77dd3a5f85582285",
@@ -15612,8 +15609,7 @@
         "y": 620,
         "wires": [
             [
-                "c485f210c983cf62",
-                "8917d1f159e63cae"
+                "c485f210c983cf62"
             ]
         ]
     },
@@ -15636,9 +15632,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "1",
-        "payload": "",
         "payloadType": "date",
-        "x": 350,
+        "x": 490,
         "y": 540,
         "wires": [
             [
@@ -21698,6 +21693,33 @@
         "wires": [
             [
                 "7229731471032c04"
+            ]
+        ]
+    },
+    {
+        "id": "aec811673b161c7c",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 620,
+        "wires": [
+            [
+                "edaf04540595f809"
             ]
         ]
     }
