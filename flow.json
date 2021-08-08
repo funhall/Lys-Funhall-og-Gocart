@@ -28,13 +28,6 @@
         "info": ""
     },
     {
-        "id": "8d690ea69cfa7101",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "f33f01041fa1256b",
         "type": "tab",
         "label": "Gocart 1",
@@ -349,9 +342,6 @@
                     },
                     {
                         "id": "c0b25b21.46e678"
-                    },
-                    {
-                        "id": "6a153fa68c4f8163"
                     }
                 ]
             }
@@ -402,6 +392,20 @@
                         "port": 0
                     }
                 ]
+            },
+            {
+                "x": 1600,
+                "y": 600,
+                "wires": [
+                    {
+                        "id": "29e5a326ed8c3fc8",
+                        "port": 0
+                    },
+                    {
+                        "id": "c1013b234ecd8bb0",
+                        "port": 0
+                    }
+                ]
             }
         ],
         "env": [],
@@ -410,7 +414,8 @@
         "outputLabels": [
             "Lap to go",
             "Yellow count",
-            "Driving mode"
+            "Driving mode",
+            "KILL"
         ]
     },
     {
@@ -529,9 +534,7 @@
             "65afd62e.d81768"
         ],
         "x": 1534,
-        "y": 99,
-        "w": 1152,
-        "h": 362
+        "y": 99
     },
     {
         "id": "64dce8ca.fbcb38",
@@ -575,9 +578,7 @@
             "25d96396.e5e99c"
         ],
         "x": 2754,
-        "y": 119,
-        "w": 1432,
-        "h": 502
+        "y": 119
     },
     {
         "id": "e3a8a575.df8bb8",
@@ -604,9 +605,7 @@
             "efe50b2a.49a2d8"
         ],
         "x": 3324,
-        "y": 1059,
-        "w": 1262,
-        "h": 282
+        "y": 1059
     },
     {
         "id": "ac652a3a.ac0918",
@@ -628,9 +627,7 @@
             "37a9ccdd.dc4b44"
         ],
         "x": 3474,
-        "y": 1399,
-        "w": 1142,
-        "h": 182
+        "y": 1399
     },
     {
         "id": "7ffdafcf.051b5",
@@ -653,9 +650,7 @@
             "e8a5fc05.21164"
         ],
         "x": 3414,
-        "y": 699,
-        "w": 1142,
-        "h": 222
+        "y": 699
     },
     {
         "id": "6cead3b5.3f313c",
@@ -738,11 +733,12 @@
             "66937350f7d2a05d",
             "68f76af9a59dfaf1",
             "8f218c7c9020697d",
-            "d0199d3fb0a7825d"
+            "d0199d3fb0a7825d",
+            "e415f12ad276bcf1"
         ],
         "x": 154,
-        "y": 259,
-        "w": 612,
+        "y": 279,
+        "w": 722,
         "h": 202
     },
     {
@@ -771,9 +767,9 @@
             "daebb94bd6579f36"
         ],
         "x": 454,
-        "y": 1479,
+        "y": 1539,
         "w": 592,
-        "h": 322
+        "h": 402
     },
     {
         "id": "64b686b8247fcf43",
@@ -833,18 +829,12 @@
         },
         "nodes": [
             "fe3c076d.7c0a98",
-            "4c62335c.a5d71c",
-            "a8d25635.6fa418",
-            "5ad67d7d.71fe44",
-            "dbd1c00.64d624",
-            "3dc540d6.1e568",
-            "bf50a91e.928358",
-            "764231ea.38f05",
-            "244dd1db.9a0d9e",
-            "12814882.0a8227"
+            "4c62335c.a5d71c"
         ],
-        "x": 254,
-        "y": 1279
+        "x": 334,
+        "y": 1299,
+        "w": 892,
+        "h": 402
     },
     {
         "id": "023f5c4090e3616a",
@@ -865,34 +855,14 @@
             "beb163ec7753a5db",
             "17e541db7930705f",
             "2fc9b3d53810cc2f",
-            "6a10ee66ed0d59c2"
+            "6a10ee66ed0d59c2",
+            "cd1879c54642bfae",
+            "b32b2339bb363320"
         ],
-        "x": 1164,
-        "y": 1679
-    },
-    {
-        "id": "325992069999e43a",
-        "type": "group",
-        "z": "da7dc42c6a6c727b",
-        "name": "Batteri registrering cart 3",
-        "style": {
-            "stroke": "#ff0000",
-            "label": true
-        },
-        "nodes": [
-            "03b6b3cfe9fb8f33",
-            "d031e18b8c757382",
-            "05fbe018a1f09974",
-            "14982f72a396e211",
-            "f67740f340668883",
-            "7709b82a8a97e306",
-            "5be0cdbc71c88529",
-            "257ca2e3b40ca7be",
-            "af8915960d11047e",
-            "f72997a1b02bce46"
-        ],
-        "x": 444,
-        "y": 1379
+        "x": 1224,
+        "y": 1559,
+        "w": 1102,
+        "h": 322
     },
     {
         "id": "c2364a89.dd5338",
@@ -913,10 +883,14 @@
             "146c0b2f.4d5625",
             "3f71b641.72726a",
             "457036dd.95cc28",
-            "7f14b40a.aafe4c"
+            "7f14b40a.aafe4c",
+            "13b7b94d8857a4f1",
+            "f03698989dd4fe28"
         ],
-        "x": 54,
-        "y": 1359
+        "x": 294,
+        "y": 1319,
+        "w": 832,
+        "h": 222
     },
     {
         "id": "df5df470.e66c08",
@@ -937,10 +911,14 @@
             "f9492666.47a918",
             "9419f1b8.226b2",
             "9f1733e4.f08e4",
-            "a4cb8d5f.e5c9c"
+            "a4cb8d5f.e5c9c",
+            "87c2a0fb29f237f0",
+            "891987c786be1c37"
         ],
-        "x": 104,
-        "y": 1099
+        "x": 324,
+        "y": 1079,
+        "w": 922,
+        "h": 202
     },
     {
         "id": "cb3985a8.43f6c8",
@@ -961,10 +939,13 @@
             "fcef50cf.1de52",
             "7fee54b7.7c744c",
             "58deedb8.6671b4",
-            "dcc54df8.0f09a"
+            "dcc54df8.0f09a",
+            "da93bc4d5c74711d"
         ],
         "x": 134,
-        "y": 1139
+        "y": 1099,
+        "w": 912,
+        "h": 182
     },
     {
         "id": "1d6a28facb6ebdcc",
@@ -1009,32 +990,6 @@
         "h": 202
     },
     {
-        "id": "b2303c9bfa93b23e",
-        "type": "group",
-        "z": "f33f01041fa1256b",
-        "name": "Batteri registrering cart 1",
-        "style": {
-            "stroke": "#ff3f3f",
-            "label": true
-        },
-        "nodes": [
-            "cb4bcaf10398fa50",
-            "364a50a0d76bf122",
-            "bcde4b59d218385c",
-            "e12d49488b4b5722",
-            "4680a879eae6923c",
-            "2271c5a6085332b7",
-            "bb0f1ad69ff34932",
-            "344963ac9df779ac",
-            "3dcd472e82454ba5",
-            "fa678883d6a0041a"
-        ],
-        "x": 154,
-        "y": 1919,
-        "w": 802,
-        "h": 222
-    },
-    {
         "id": "0ef9112786ad0ec9",
         "type": "group",
         "z": "5f70722b1438c695",
@@ -1048,7 +1003,9 @@
             "e2fee4814798397d"
         ],
         "x": 494,
-        "y": 759
+        "y": 759,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "f3ec1cbd3c1d8cb8",
@@ -1064,7 +1021,9 @@
             "1f4c51b0dc1b0b60"
         ],
         "x": 714,
-        "y": 739
+        "y": 739,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "86c4480baf3a8bfe",
@@ -1080,7 +1039,9 @@
             "1617bb8998d2784c"
         ],
         "x": 894,
-        "y": 739
+        "y": 739,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "c73186a96264078e",
@@ -1096,7 +1057,9 @@
             "f9755a9458821d1c"
         ],
         "x": 534,
-        "y": 699
+        "y": 699,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "f6c2e601a024689d",
@@ -1112,7 +1075,9 @@
             "e678c28ca7ea8599"
         ],
         "x": 554,
-        "y": 739
+        "y": 739,
+        "w": 552,
+        "h": 122
     },
     {
         "id": "253e038479b77e6c",
@@ -1128,7 +1093,65 @@
             "da20bc90398fe4aa"
         ],
         "x": 514,
-        "y": 679
+        "y": 679,
+        "w": 552,
+        "h": 122
+    },
+    {
+        "id": "7004ce485a25266f",
+        "type": "group",
+        "z": "f33f01041fa1256b",
+        "name": "Batteri registrering cart 1",
+        "style": {
+            "stroke": "#ff3f3f",
+            "label": true
+        },
+        "nodes": [
+            "aa7da06f17317472",
+            "e167687eb6489609",
+            "ad556882da698864",
+            "a4daf28e743d91c9",
+            "ca84432278471a85",
+            "b25ce06b7729925c",
+            "aee617a33bb2ddf7",
+            "6c06e069c6158a9f",
+            "072ee9f3038b7dcb",
+            "d7bf0dcf200a6122",
+            "3dcd472e82454ba5",
+            "fa678883d6a0041a"
+        ],
+        "x": 304,
+        "y": 1859,
+        "w": 882,
+        "h": 342
+    },
+    {
+        "id": "d1c1e056c45cf8e3",
+        "type": "group",
+        "z": "da7dc42c6a6c727b",
+        "name": "Batteri registrering cart 3",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true
+        },
+        "nodes": [
+            "3c16ebf5698257d0",
+            "51fe1a7643aa2d94",
+            "46c20daca2cfee89",
+            "bc2e4d6a6e457c14",
+            "fcb0a275502a8a54",
+            "9cf390bb388af071",
+            "a33c2bcf8a878e6b",
+            "0ae33a3eeba674c9",
+            "8abfda0fe209fd99",
+            "cb11e443d65ddc0e",
+            "03b6b3cfe9fb8f33",
+            "d031e18b8c757382"
+        ],
+        "x": 614,
+        "y": 1339,
+        "w": 992,
+        "h": 302
     },
     {
         "id": "c4b16a26.2b0568",
@@ -1798,33 +1821,6 @@
         "height": 1
     },
     {
-        "id": "70b5cb53dc7c092b",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "d88ad459.6a8ad8",
-        "order": 9,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "4312e21603350d27",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "d88ad459.6a8ad8",
-        "order": 10,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "bd7da9db8347dc7c",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "d88ad459.6a8ad8",
-        "order": 18,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "0f3994556e439ee1",
         "type": "ui_spacer",
         "name": "spacer",
@@ -2037,6 +2033,42 @@
         "name": "spacer",
         "group": "3bdff17c.454a8e",
         "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0b1df4e8c461850d",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "d88ad459.6a8ad8",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b919bef805b3a187",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "d88ad459.6a8ad8",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c92b9c27f5f36c3e",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "d88ad459.6a8ad8",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d6af5bf3a7448291",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "d88ad459.6a8ad8",
+        "order": 21,
         "width": 1,
         "height": 1
     },
@@ -9238,7 +9270,7 @@
         "id": "a5b955c7.4b03c8",
         "type": "switch",
         "z": "540c631c.a41c9c",
-        "name": "",
+        "name": "Hvis RED",
         "property": "payload.color",
         "propertyType": "msg",
         "rules": [
@@ -9251,7 +9283,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 850,
+        "x": 860,
         "y": 560,
         "wires": [
             []
@@ -9923,13 +9955,13 @@
         "type": "ui_button",
         "z": "07816be5df0ddf81",
         "g": "ebb52dc9fd74f9d7",
-        "name": "Reset batteri",
+        "name": "Skift batteri",
         "group": "d88ad459.6a8ad8",
-        "order": 6,
+        "order": 8,
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "Reset batteri",
+        "label": "Skift batteri",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background.edit}}",
@@ -9938,7 +9970,7 @@
         "payloadType": "str",
         "topic": "",
         "x": 250,
-        "y": 320,
+        "y": 340,
         "wires": [
             [
                 "8f218c7c9020697d"
@@ -10198,7 +10230,7 @@
             {
                 "t": "set",
                 "p": "edit",
-                "pt": "flow",
+                "pt": "global",
                 "to": "false",
                 "tot": "bool"
             }
@@ -10209,10 +10241,11 @@
         "to": "",
         "reg": false,
         "x": 690,
-        "y": 360,
+        "y": 380,
         "wires": [
             [
-                "cdf90507f028a806"
+                "cdf90507f028a806",
+                "e415f12ad276bcf1"
             ]
         ]
     },
@@ -10233,7 +10266,7 @@
             {
                 "t": "set",
                 "p": "edit",
-                "pt": "flow",
+                "pt": "global",
                 "to": "true",
                 "tot": "bool"
             }
@@ -10244,10 +10277,11 @@
         "to": "",
         "reg": false,
         "x": 690,
-        "y": 300,
+        "y": 320,
         "wires": [
             [
-                "cdf90507f028a806"
+                "cdf90507f028a806",
+                "e415f12ad276bcf1"
             ]
         ]
     },
@@ -10258,7 +10292,7 @@
         "g": "ebb52dc9fd74f9d7",
         "name": "",
         "property": "edit",
-        "propertyType": "flow",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "false"
@@ -10286,29 +10320,23 @@
         "type": "link in",
         "z": "07816be5df0ddf81",
         "g": "ebb52dc9fd74f9d7",
-        "name": "",
+        "name": "skift batteri",
         "links": [
-            "9d1907bf.e9ed18",
-            "cf8b1a01.d9b668",
-            "3946183.526efe8",
-            "1efff6cc.7933f9",
-            "5bb42a5d.5d12b4",
-            "c6d729f9.bbe398",
-            "c35fdece.bf4da",
-            "a4e27021.d33e8",
-            "3f7b5f44.f0a96",
-            "30f9f793.7b01e8",
-            "4ef93883.a835f8",
-            "344963ac9df779ac",
             "244dd1db.9a0d9e",
             "2fc9b3d53810cc2f",
-            "af8915960d11047e",
+            "344963ac9df779ac",
             "457036dd.95cc28",
+            "58deedb8.6671b4",
             "9f1733e4.f08e4",
-            "58deedb8.6671b4"
+            "af8915960d11047e",
+            "688781c62bdcf5c4",
+            "aee617a33bb2ddf7",
+            "7db8456da3ad0d72",
+            "a33c2bcf8a878e6b",
+            "6df49e2b7b65405f"
         ],
         "x": 205,
-        "y": 420,
+        "y": 440,
         "wires": [
             [
                 "cdf90507f028a806"
@@ -10351,11 +10379,11 @@
         "order": 8,
         "width": 5,
         "height": 1,
-        "name": "Heat time",
+        "name": "Heat time Cust",
         "label": "<font size=15>Heat",
         "format": "<font size=15>{{msg.payload}} ",
         "layout": "row-spread",
-        "x": 4920,
+        "x": 4940,
         "y": 720,
         "wires": []
     },
@@ -10480,7 +10508,7 @@
         "type": "debug",
         "z": "07816be5df0ddf81",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10504,7 +10532,8 @@
             [
                 "d12801b02b5e5724",
                 "ecb09c839dd0b977",
-                "37a5ebc5d7947f26"
+                "37a5ebc5d7947f26",
+                "dd2278575980afa2"
             ]
         ]
     },
@@ -10517,7 +10546,7 @@
         "tooltip": "",
         "place": "Omgange",
         "group": "d88ad459.6a8ad8",
-        "order": 3,
+        "order": 4,
         "width": 3,
         "height": 2,
         "passthru": true,
@@ -10618,7 +10647,8 @@
         "y": 720,
         "wires": [
             [
-                "ac3c279cf4c016c8"
+                "ac3c279cf4c016c8",
+                "59c9291696e3a624"
             ]
         ]
     },
@@ -10670,7 +10700,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 990,
+        "x": 930,
         "y": 40,
         "wires": [
             [
@@ -10859,7 +10889,7 @@
         "tooltip": "",
         "place": "Heat",
         "group": "d88ad459.6a8ad8",
-        "order": 4,
+        "order": 5,
         "width": 3,
         "height": 2,
         "passthru": true,
@@ -10919,46 +10949,46 @@
         "name": "Antal hold",
         "label": "",
         "tooltip": "",
-        "place": "Antal hold",
+        "place": "Antal gokart",
         "group": "d88ad459.6a8ad8",
-        "order": 2,
+        "order": 3,
         "width": 3,
-        "height": 2,
+        "height": 1,
         "passthru": true,
         "multiple": false,
         "options": [
             {
-                "label": "1 hold",
+                "label": "1 kart",
                 "value": 1,
                 "type": "num"
             },
             {
-                "label": "2 hold",
+                "label": "2 kart",
                 "value": 2,
                 "type": "num"
             },
             {
-                "label": "3 hold",
+                "label": "3 kart",
                 "value": 3,
                 "type": "num"
             },
             {
-                "label": "4 hold",
+                "label": "4 kart",
                 "value": 4,
                 "type": "num"
             },
             {
-                "label": "5 hold",
+                "label": "5 kart",
                 "value": "5",
                 "type": "str"
             },
             {
-                "label": "6 hold",
+                "label": "6 kart",
                 "value": "6",
                 "type": "str"
             },
             {
-                "label": "7 hold",
+                "label": "7 kart",
                 "value": "7",
                 "type": "str"
             }
@@ -11020,7 +11050,7 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 5,
+        "order": 7,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -11047,9 +11077,9 @@
         "z": "07816be5df0ddf81",
         "name": "Startss",
         "group": "d88ad459.6a8ad8",
-        "order": 7,
+        "order": 6,
         "width": 2,
-        "height": 1,
+        "height": 2,
         "passthru": false,
         "label": "{{msg.game.text}}",
         "tooltip": "",
@@ -11073,7 +11103,7 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 8,
+        "order": 10,
         "width": 2,
         "height": 1,
         "passthru": false,
@@ -11100,7 +11130,7 @@
         "propertyType": "global",
         "rules": [
             {
-                "t": "false"
+                "t": "true"
             },
             {
                 "t": "else"
@@ -11193,7 +11223,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1520,
+        "y": 1580,
         "wires": []
     },
     {
@@ -11219,10 +11249,11 @@
         "payload": "{\"percent\":50,\"kill\": 1}",
         "payloadType": "json",
         "x": 570,
-        "y": 1640,
+        "y": 1780,
         "wires": [
             [
-                "db8d8874e97a4f91"
+                "db8d8874e97a4f91",
+                "356ee9f34a018ae5"
             ]
         ]
     },
@@ -11367,7 +11398,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1560,
+        "y": 1700,
         "wires": []
     },
     {
@@ -11381,7 +11412,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1600,
+        "y": 1740,
         "wires": []
     },
     {
@@ -11395,7 +11426,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1640,
+        "y": 1780,
         "wires": []
     },
     {
@@ -11409,7 +11440,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1680,
+        "y": 1820,
         "wires": []
     },
     {
@@ -11423,7 +11454,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1720,
+        "y": 1860,
         "wires": []
     },
     {
@@ -11437,7 +11468,7 @@
         "retain": "",
         "broker": "dca8425b.8fb18",
         "x": 940,
-        "y": 1760,
+        "y": 1900,
         "wires": []
     },
     {
@@ -11452,16 +11483,16 @@
             "c8359207.2830d"
         ],
         "x": 705,
-        "y": 1660,
+        "y": 1800,
         "wires": [
             [
-                "db8d8874e97a4f91",
                 "356ee9f34a018ae5",
                 "0bd5fd434b356021",
                 "1832ca2c5c661b24",
                 "49a23442b0fcfff5",
                 "3c0b68381e8f3d1d",
-                "2c3e54c4c0c86056"
+                "2c3e54c4c0c86056",
+                "db8d8874e97a4f91"
             ]
         ]
     },
@@ -11488,10 +11519,11 @@
         "payload": "{\"percent\":50,\"kill\": 0}",
         "payloadType": "json",
         "x": 550,
-        "y": 1700,
+        "y": 1840,
         "wires": [
             [
-                "db8d8874e97a4f91"
+                "db8d8874e97a4f91",
+                "356ee9f34a018ae5"
             ]
         ]
     },
@@ -11547,42 +11579,42 @@
                 "p": "lap2",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "lap3",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "lap4",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "lap5",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "lap6",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
                 "p": "lap7",
                 "pt": "global",
                 "to": "payload",
-                "tot": "str"
+                "tot": "msg"
             },
             {
                 "t": "set",
@@ -11686,7 +11718,7 @@
                 "t": "set",
                 "p": "timeron",
                 "pt": "global",
-                "to": "true",
+                "to": "false",
                 "tot": "bool"
             },
             {
@@ -11749,7 +11781,7 @@
                 "t": "set",
                 "p": "timeron",
                 "pt": "global",
-                "to": "false",
+                "to": "true",
                 "tot": "bool"
             },
             {
@@ -11845,7 +11877,8 @@
         "y": 620,
         "wires": [
             [
-                "ac3c279cf4c016c8"
+                "ac3c279cf4c016c8",
+                "59c9291696e3a624"
             ]
         ]
     },
@@ -11884,9 +11917,9 @@
         "z": "07816be5df0ddf81",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
             "c8359207.2830d",
-            "6afc064f9888a1f5"
+            "6afc064f9888a1f5",
+            "b75e47165791469f"
         ],
         "x": 3475,
         "y": 780,
@@ -11959,7 +11992,7 @@
         "type": "switch",
         "z": "07816be5df0ddf81",
         "name": "Lap >0",
-        "property": "lap1",
+        "property": "setlap",
         "propertyType": "global",
         "rules": [
             {
@@ -11974,8 +12007,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 3460,
-        "y": 660,
+        "x": 3450,
+        "y": 640,
         "wires": [
             [
                 "a02e588314e138c9"
@@ -12256,7 +12289,7 @@
         "z": "07816be5df0ddf81",
         "g": "64b686b8247fcf43",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -12310,8 +12343,7 @@
         "y": 660,
         "wires": [
             [
-                "dc7edb4fe67cb2d7",
-                "2dcc2117af90d24e"
+                "dc7edb4fe67cb2d7"
             ],
             []
         ]
@@ -12358,7 +12390,7 @@
         "height": 1,
         "name": "2 Lap tilbage",
         "label": "<font size = 6>{{msg.label}} ",
-        "format": "<font size = 6>  {{msg.lap}} ",
+        "format": "<font size = 6> {{msg.lap}} ",
         "layout": "row-center",
         "x": 1170,
         "y": 20,
@@ -12460,7 +12492,7 @@
         "height": 1,
         "name": "3 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "",
         "layout": "row-spread",
         "x": 2770,
         "y": 240,
@@ -12593,17 +12625,15 @@
         "g": "64b686b8247fcf43",
         "name": "Kill out",
         "links": [
-            "354ab183f769db17",
-            "69b487d4010c8776",
-            "d6de306f825f6bab",
-            "8119bdf27a359380",
-            "904de61727a5131f",
             "15c8fce7269ed981",
+            "69b487d4010c8776",
+            "75e07beba0fe8103",
             "8a9366e81dd4c2ef",
-            "e972b590f72934e9",
-            "c6902a5501e7a8b5",
+            "904de61727a5131f",
             "c164263cf03683ad",
-            "75e07beba0fe8103"
+            "d6de306f825f6bab",
+            "e972b590f72934e9",
+            "354ab183f769db17"
         ],
         "x": 3765,
         "y": 1040,
@@ -12614,7 +12644,7 @@
         "type": "link in",
         "z": "07816be5df0ddf81",
         "g": "64b686b8247fcf43",
-        "name": "",
+        "name": "Kill ALL",
         "links": [],
         "x": 3345,
         "y": 960,
@@ -12804,7 +12834,6 @@
         "g": "05ff7f8ab31d3633",
         "name": "kill fra teamnumber",
         "links": [
-            "d2805400.de5df8",
             "354ab183f769db17"
         ],
         "x": 2635,
@@ -12835,7 +12864,8 @@
         "y": 820,
         "wires": [
             [
-                "6afc064f9888a1f5"
+                "6afc064f9888a1f5",
+                "3ae557b9451cf83e"
             ]
         ]
     },
@@ -12941,19 +12971,19 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 11,
+        "order": 13,
         "width": 1,
         "height": 1,
-        "passthru": true,
+        "passthru": false,
         "label": "Cart1",
         "tooltip": "",
         "color": "",
         "bgcolor": "{{msg.background}}",
         "icon": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "1",
+        "payloadType": "num",
         "topic": "",
-        "x": 410,
+        "x": 390,
         "y": 620,
         "wires": [
             [
@@ -12968,23 +12998,23 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 12,
+        "order": 14,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart2",
         "tooltip": "",
         "color": "",
-        "bgcolor": "",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
         "payload": "{\"group\":{\"hide\":[\"Race_board_GOKART_2\"]}}",
         "payloadType": "json",
         "topic": "",
-        "x": 410,
-        "y": 680,
+        "x": 470,
+        "y": 820,
         "wires": [
             [
-                "45620d9ac6fcb105"
+                "e94550a469334d10"
             ]
         ]
     },
@@ -12994,22 +13024,24 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 13,
+        "order": 16,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart3",
         "tooltip": "",
         "color": "",
-        "bgcolor": "lime",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "{\"group\":{\"hide\":[\"Race_board_GOKART_2\"]}}",
+        "payloadType": "json",
         "topic": "",
-        "x": 550,
-        "y": 760,
+        "x": 470,
+        "y": 960,
         "wires": [
-            []
+            [
+                "a114bbc6eb57aa27"
+            ]
         ]
     },
     {
@@ -13018,22 +13050,24 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 14,
+        "order": 17,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart4",
         "tooltip": "",
         "color": "",
-        "bgcolor": "lime",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 550,
-        "y": 820,
+        "x": 470,
+        "y": 1060,
         "wires": [
-            []
+            [
+                "d4fc755084990465"
+            ]
         ]
     },
     {
@@ -13042,22 +13076,24 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 15,
+        "order": 18,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart5",
         "tooltip": "",
         "color": "",
-        "bgcolor": "lime",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 550,
-        "y": 840,
+        "x": 450,
+        "y": 1160,
         "wires": [
-            []
+            [
+                "7864b80812837bf5"
+            ]
         ]
     },
     {
@@ -13066,22 +13102,24 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 16,
+        "order": 19,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart6",
         "tooltip": "",
         "color": "",
-        "bgcolor": "lime",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 550,
-        "y": 900,
+        "x": 450,
+        "y": 1260,
         "wires": [
-            []
+            [
+                "364fc8363e6414f9"
+            ]
         ]
     },
     {
@@ -13090,22 +13128,24 @@
         "z": "07816be5df0ddf81",
         "name": "",
         "group": "d88ad459.6a8ad8",
-        "order": 17,
+        "order": 20,
         "width": 1,
         "height": 1,
         "passthru": false,
         "label": "Cart7",
         "tooltip": "",
         "color": "",
-        "bgcolor": "lime",
+        "bgcolor": "{{msg.background}}",
         "icon": "",
         "payload": "",
         "payloadType": "str",
         "topic": "",
-        "x": 530,
-        "y": 1000,
+        "x": 450,
+        "y": 1340,
         "wires": [
-            []
+            [
+                "1cb310acf93b3c7b"
+            ]
         ]
     },
     {
@@ -13120,14 +13160,14 @@
                 "t": "false"
             },
             {
-                "t": "else"
+                "t": "true"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
         "x": 790,
-        "y": 620,
+        "y": 640,
         "wires": [
             [
                 "c36d3c04a90e10fa"
@@ -13161,7 +13201,7 @@
                 "t": "set",
                 "p": "background",
                 "pt": "msg",
-                "to": "default",
+                "to": "red",
                 "tot": "str"
             }
         ],
@@ -13170,40 +13210,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 580,
+        "x": 930,
+        "y": 600,
         "wires": [
             [
-                "c485f210c983cf62"
-            ]
-        ]
-    },
-    {
-        "id": "8f4a2480f7796e8b",
-        "type": "inject",
-        "z": "07816be5df0ddf81",
-        "name": "hide",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payloadType": "date",
-        "x": 790,
-        "y": 520,
-        "wires": [
-            [
-                "75290bf1b2030421",
-                "c36d3c04a90e10fa"
+                "c485f210c983cf62",
+                "8917d1f159e63cae"
             ]
         ]
     },
@@ -13212,36 +13224,10 @@
         "type": "ui_ui_control",
         "z": "07816be5df0ddf81",
         "name": "",
-        "x": 1400,
-        "y": 600,
+        "x": 1180,
+        "y": 1140,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "cbedcf557a42673f",
-        "type": "inject",
-        "z": "07816be5df0ddf81",
-        "name": "show",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 770,
-        "y": 780,
-        "wires": [
-            [
-                "77dd3a5f85582285",
-                "49d2027102d295f0"
-            ]
         ]
     },
     {
@@ -13268,7 +13254,7 @@
                 "t": "set",
                 "p": "background",
                 "pt": "msg",
-                "to": "RED",
+                "to": "lime",
                 "tot": "str"
             }
         ],
@@ -13277,39 +13263,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 620,
+        "x": 930,
+        "y": 660,
         "wires": [
             [
-                "c485f210c983cf62"
-            ]
-        ]
-    },
-    {
-        "id": "46837b0d32be29b6",
-        "type": "inject",
-        "z": "07816be5df0ddf81",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "1",
-        "payloadType": "date",
-        "x": 490,
-        "y": 540,
-        "wires": [
-            [
-                "edaf04540595f809"
+                "c485f210c983cf62",
+                "8917d1f159e63cae"
             ]
         ]
     },
@@ -13334,109 +13293,10 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 340,
-        "y": 740,
+        "x": 280,
+        "y": 860,
         "wires": [
-            [
-                "e658f324d6147647"
-            ]
-        ]
-    },
-    {
-        "id": "e658f324d6147647",
-        "type": "switch",
-        "z": "07816be5df0ddf81",
-        "name": "",
-        "property": "show2",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "false"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 770,
-        "y": 680,
-        "wires": [
-            [
-                "75290bf1b2030421"
-            ],
-            [
-                "77dd3a5f85582285"
-            ]
-        ]
-    },
-    {
-        "id": "75290bf1b2030421",
-        "type": "change",
-        "z": "07816be5df0ddf81",
-        "name": "hide",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_2\"]}}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "show2",
-                "pt": "flow",
-                "to": "true",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 660,
-        "wires": [
-            [
-                "c485f210c983cf62"
-            ]
-        ]
-    },
-    {
-        "id": "77dd3a5f85582285",
-        "type": "change",
-        "z": "07816be5df0ddf81",
-        "name": "Show",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_2\"]}}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "show2",
-                "pt": "flow",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 970,
-        "y": 700,
-        "wires": [
-            [
-                "c485f210c983cf62"
-            ]
+            []
         ]
     },
     {
@@ -13602,7 +13462,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -13610,12 +13470,10 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 870,
-        "y": 1320,
+        "x": 1130,
+        "y": 1340,
         "wires": [
-            [
-                "a8d25635.6fa418"
-            ]
+            []
         ]
     },
     {
@@ -13657,204 +13515,9 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 550,
-        "y": 1380,
+        "x": 410,
+        "y": 1660,
         "wires": []
-    },
-    {
-        "id": "a8d25635.6fa418",
-        "type": "switch",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "property": "edit",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 690,
-        "y": 1380,
-        "wires": [
-            [
-                "5ad67d7d.71fe44"
-            ]
-        ]
-    },
-    {
-        "id": "5ad67d7d.71fe44",
-        "type": "change",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "Set counter to 0",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "edit",
-                "pt": "flow",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "background.edit",
-                "pt": "msg",
-                "to": "RED",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 1380,
-        "wires": [
-            [
-                "764231ea.38f05",
-                "244dd1db.9a0d9e"
-            ]
-        ]
-    },
-    {
-        "id": "dbd1c00.64d624",
-        "type": "change",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.output",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 400,
-        "y": 1380,
-        "wires": [
-            [
-                "bf50a91e.928358"
-            ]
-        ]
-    },
-    {
-        "id": "3dc540d6.1e568",
-        "type": "calculator",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "mult",
-        "constant": "1",
-        "round": true,
-        "decimals": 0,
-        "x": 700,
-        "y": 1320,
-        "wires": [
-            [
-                "fe3c076d.7c0a98"
-            ]
-        ]
-    },
-    {
-        "id": "bf50a91e.928358",
-        "type": "calculator",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "div",
-        "constant": "10000",
-        "round": true,
-        "decimals": "2",
-        "x": 390,
-        "y": 1320,
-        "wires": [
-            [
-                "764231ea.38f05"
-            ]
-        ]
-    },
-    {
-        "id": "764231ea.38f05",
-        "type": "sum",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "topic": "",
-        "x": 530,
-        "y": 1320,
-        "wires": [
-            [
-                "3dc540d6.1e568",
-                "4c62335c.a5d71c"
-            ]
-        ]
-    },
-    {
-        "id": "244dd1db.9a0d9e",
-        "type": "link out",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "Reset Battery",
-        "links": [
-            "d0199d3fb0a7825d"
-        ],
-        "x": 995,
-        "y": 1380,
-        "wires": []
-    },
-    {
-        "id": "12814882.0a8227",
-        "type": "link in",
-        "z": "9ef76333.a9baf",
-        "g": "1fa75869.a15e98",
-        "name": "",
-        "links": [
-            "57265814.756518"
-        ],
-        "x": 295,
-        "y": 1340,
-        "wires": [
-            [
-                "dbd1c00.64d624"
-            ]
-        ]
     },
     {
         "id": "36191f3e.268b6",
@@ -13914,7 +13577,7 @@
         "height": 1,
         "name": "4 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "",
         "layout": "row-spread",
         "x": 2410,
         "y": 180,
@@ -14242,7 +13905,7 @@
         "height": 1,
         "name": "2 yellow count",
         "label": "",
-        "format": "<font size = 10>{{msg.yellowcount}}",
+        "format": "{{msg.yellowcount}}",
         "layout": "row-spread",
         "x": 2280,
         "y": 60,
@@ -14330,7 +13993,7 @@
         "height": 1,
         "name": "2 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "<font size = 8>",
         "layout": "row-spread",
         "x": 2270,
         "y": 120,
@@ -14419,7 +14082,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -14427,8 +14090,8 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 1850,
-        "y": 1720,
+        "x": 2230,
+        "y": 1620,
         "wires": [
             [
                 "1a9c07d144f5ffad"
@@ -14474,8 +14137,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1510,
-        "y": 1780,
+        "x": 1570,
+        "y": 1840,
         "wires": []
     },
     {
@@ -14485,7 +14148,7 @@
         "g": "023f5c4090e3616a",
         "name": "",
         "property": "edit",
-        "propertyType": "flow",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "true"
@@ -14494,8 +14157,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1650,
-        "y": 1780,
+        "x": 1710,
+        "y": 1740,
         "wires": [
             [
                 "8a4962f04a386c99"
@@ -14526,7 +14189,7 @@
             {
                 "t": "set",
                 "p": "edit",
-                "pt": "flow",
+                "pt": "global",
                 "to": "false",
                 "tot": "bool"
             },
@@ -14543,8 +14206,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1840,
-        "y": 1780,
+        "x": 1900,
+        "y": 1740,
         "wires": [
             [
                 "2d5654434a0b3568",
@@ -14560,8 +14223,8 @@
         "g": "023f5c4090e3616a",
         "name": "",
         "topic": "",
-        "x": 1490,
-        "y": 1720,
+        "x": 1550,
+        "y": 1680,
         "wires": [
             [
                 "9dc483f8c5caf6f2",
@@ -14596,8 +14259,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1340,
-        "y": 1780,
+        "x": 1400,
+        "y": 1740,
         "wires": [
             [
                 "beb163ec7753a5db"
@@ -14616,8 +14279,8 @@
         "constant": "10000",
         "round": true,
         "decimals": "2",
-        "x": 1330,
-        "y": 1720,
+        "x": 1390,
+        "y": 1680,
         "wires": [
             [
                 "b634620bfa60d20e"
@@ -14636,8 +14299,8 @@
         "constant": "1",
         "round": true,
         "decimals": 0,
-        "x": 1680,
-        "y": 1720,
+        "x": 1740,
+        "y": 1680,
         "wires": [
             [
                 "2d5654434a0b3568"
@@ -14651,10 +14314,9 @@
         "g": "023f5c4090e3616a",
         "name": "Reset Battery",
         "links": [
-            "d0199d3fb0a7825d",
-            "e6564522.9e6348"
+            "d0199d3fb0a7825d"
         ],
-        "x": 1955,
+        "x": 2035,
         "y": 1780,
         "wires": []
     },
@@ -14667,8 +14329,8 @@
         "links": [
             "54d21804.8a1cc8"
         ],
-        "x": 1205,
-        "y": 1760,
+        "x": 1265,
+        "y": 1720,
         "wires": [
             [
                 "3647700dbf861c5d"
@@ -14679,14 +14341,14 @@
         "id": "03b6b3cfe9fb8f33",
         "type": "ui_button",
         "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
+        "g": "d1c1e056c45cf8e3",
         "name": "3 bat. time",
         "group": "1a7f6b0.0560695",
         "order": 19,
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -14694,19 +14356,17 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 1050,
-        "y": 1420,
+        "x": 1510,
+        "y": 1380,
         "wires": [
-            [
-                "05fbe018a1f09974"
-            ]
+            []
         ]
     },
     {
         "id": "d031e18b8c757382",
         "type": "ui_level",
         "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
+        "g": "d1c1e056c45cf8e3",
         "group": "1a7f6b0.0560695",
         "order": 21,
         "width": 2,
@@ -14741,204 +14401,9 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 750,
-        "y": 1480,
+        "x": 690,
+        "y": 1600,
         "wires": []
-    },
-    {
-        "id": "05fbe018a1f09974",
-        "type": "switch",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "property": "edit",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 890,
-        "y": 1480,
-        "wires": [
-            [
-                "14982f72a396e211"
-            ]
-        ]
-    },
-    {
-        "id": "14982f72a396e211",
-        "type": "change",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "Set counter to 0",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "edit",
-                "pt": "flow",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "background.edit",
-                "pt": "msg",
-                "to": "RED",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1060,
-        "y": 1480,
-        "wires": [
-            [
-                "f67740f340668883",
-                "af8915960d11047e"
-            ]
-        ]
-    },
-    {
-        "id": "f67740f340668883",
-        "type": "sum",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "topic": "",
-        "x": 750,
-        "y": 1420,
-        "wires": [
-            [
-                "d031e18b8c757382",
-                "257ca2e3b40ca7be"
-            ]
-        ]
-    },
-    {
-        "id": "7709b82a8a97e306",
-        "type": "change",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.output",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 1480,
-        "wires": [
-            [
-                "5be0cdbc71c88529"
-            ]
-        ]
-    },
-    {
-        "id": "5be0cdbc71c88529",
-        "type": "calculator",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "div",
-        "constant": "10000",
-        "round": true,
-        "decimals": "2",
-        "x": 590,
-        "y": 1420,
-        "wires": [
-            [
-                "f67740f340668883"
-            ]
-        ]
-    },
-    {
-        "id": "257ca2e3b40ca7be",
-        "type": "calculator",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "mult",
-        "constant": "1",
-        "round": true,
-        "decimals": 0,
-        "x": 900,
-        "y": 1420,
-        "wires": [
-            [
-                "03b6b3cfe9fb8f33"
-            ]
-        ]
-    },
-    {
-        "id": "af8915960d11047e",
-        "type": "link out",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "Reset Battery",
-        "links": [
-            "d0199d3fb0a7825d"
-        ],
-        "x": 1175,
-        "y": 1480,
-        "wires": []
-    },
-    {
-        "id": "f72997a1b02bce46",
-        "type": "link in",
-        "z": "da7dc42c6a6c727b",
-        "g": "325992069999e43a",
-        "name": "",
-        "links": [
-            "ac8b4eac5b92d74b"
-        ],
-        "x": 485,
-        "y": 1480,
-        "wires": [
-            [
-                "7709b82a8a97e306"
-            ]
-        ]
     },
     {
         "id": "d6dc7c62.8cc13",
@@ -15033,7 +14498,7 @@
         "height": 1,
         "name": "5 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "",
         "layout": "row-spread",
         "x": 2530,
         "y": 160,
@@ -15286,7 +14751,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -15294,8 +14759,8 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 690,
-        "y": 1400,
+        "x": 1030,
+        "y": 1420,
         "wires": [
             [
                 "c605e378.1f259"
@@ -15341,8 +14806,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 370,
-        "y": 1460,
+        "x": 610,
+        "y": 1500,
         "wires": []
     },
     {
@@ -15361,8 +14826,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 510,
-        "y": 1460,
+        "x": 750,
+        "y": 1500,
         "wires": [
             [
                 "f6475384.d548"
@@ -15410,8 +14875,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 1460,
+        "x": 940,
+        "y": 1500,
         "wires": [
             [
                 "8819eb71.2e6d48",
@@ -15426,8 +14891,8 @@
         "g": "c2364a89.dd5338",
         "name": "",
         "topic": "",
-        "x": 370,
-        "y": 1400,
+        "x": 610,
+        "y": 1440,
         "wires": [
             [
                 "3f71b641.72726a",
@@ -15462,8 +14927,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
-        "y": 1460,
+        "x": 460,
+        "y": 1500,
         "wires": [
             [
                 "146c0b2f.4d5625"
@@ -15482,8 +14947,8 @@
         "constant": "10000",
         "round": true,
         "decimals": "2",
-        "x": 210,
-        "y": 1400,
+        "x": 450,
+        "y": 1440,
         "wires": [
             [
                 "8819eb71.2e6d48"
@@ -15502,8 +14967,8 @@
         "constant": "1",
         "round": true,
         "decimals": 0,
-        "x": 520,
-        "y": 1400,
+        "x": 760,
+        "y": 1440,
         "wires": [
             [
                 "8fd02576.a78f98"
@@ -15519,8 +14984,8 @@
         "links": [
             "d0199d3fb0a7825d"
         ],
-        "x": 815,
-        "y": 1460,
+        "x": 1055,
+        "y": 1500,
         "wires": []
     },
     {
@@ -15532,8 +14997,8 @@
         "links": [
             "21fb80fd.7c164"
         ],
-        "x": 95,
-        "y": 1440,
+        "x": 335,
+        "y": 1480,
         "wires": [
             [
                 "b4540eb.2c48df"
@@ -15633,7 +15098,7 @@
         "height": 1,
         "name": "6 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "",
         "layout": "row-spread",
         "x": 2370,
         "y": 140,
@@ -15886,7 +15351,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -15894,8 +15359,8 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 790,
-        "y": 1140,
+        "x": 1150,
+        "y": 1180,
         "wires": [
             [
                 "99e25eba.a7669"
@@ -15941,8 +15406,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 450,
-        "y": 1200,
+        "x": 670,
+        "y": 1240,
         "wires": []
     },
     {
@@ -15961,8 +15426,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 610,
-        "y": 1200,
+        "x": 830,
+        "y": 1240,
         "wires": [
             [
                 "8ab09035.59416"
@@ -16010,8 +15475,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 1200,
+        "x": 1000,
+        "y": 1240,
         "wires": [
             [
                 "7ce288df.e3bd28",
@@ -16026,8 +15491,8 @@
         "g": "df5df470.e66c08",
         "name": "",
         "topic": "",
-        "x": 450,
-        "y": 1140,
+        "x": 670,
+        "y": 1180,
         "wires": [
             [
                 "9419f1b8.226b2",
@@ -16062,8 +15527,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 280,
-        "y": 1200,
+        "x": 500,
+        "y": 1240,
         "wires": [
             [
                 "f9492666.47a918"
@@ -16082,8 +15547,8 @@
         "constant": "10000",
         "round": true,
         "decimals": "2",
-        "x": 270,
-        "y": 1140,
+        "x": 490,
+        "y": 1180,
         "wires": [
             [
                 "7ce288df.e3bd28"
@@ -16102,8 +15567,8 @@
         "constant": "1",
         "round": true,
         "decimals": 0,
-        "x": 620,
-        "y": 1140,
+        "x": 840,
+        "y": 1180,
         "wires": [
             [
                 "cde1e696.fedb78"
@@ -16119,8 +15584,8 @@
         "links": [
             "d0199d3fb0a7825d"
         ],
-        "x": 915,
-        "y": 1200,
+        "x": 1135,
+        "y": 1240,
         "wires": []
     },
     {
@@ -16132,8 +15597,8 @@
         "links": [
             "46e5d519.0e6b5c"
         ],
-        "x": 145,
-        "y": 1160,
+        "x": 365,
+        "y": 1200,
         "wires": [
             [
                 "b68bb281.fd17"
@@ -16232,7 +15697,7 @@
         "height": 1,
         "name": "7 antal boost",
         "label": "<font size = 6>Antal boost",
-        "format": "<font size = 8>{{msg.payload}}",
+        "format": "",
         "layout": "row-spread",
         "x": 2710,
         "y": 80,
@@ -16485,7 +15950,7 @@
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -16493,8 +15958,8 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 750,
-        "y": 1180,
+        "x": 950,
+        "y": 1160,
         "wires": [
             [
                 "63c1c5e1.e8e77c"
@@ -16764,8 +16229,8 @@
         "links": [
             "2547437f916ba2a9"
         ],
-        "x": 4615,
-        "y": 760,
+        "x": 4535,
+        "y": 780,
         "wires": []
     },
     {
@@ -16889,15 +16354,8 @@
         "id": "aec811673b161c7c",
         "type": "change",
         "z": "07816be5df0ddf81",
-        "name": "",
+        "name": "Del ID",
         "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
             {
                 "t": "delete",
                 "p": "socketid",
@@ -16909,8 +16367,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 620,
+        "x": 650,
+        "y": 640,
         "wires": [
             [
                 "edaf04540595f809"
@@ -17022,7 +16480,7 @@
         "width": 5,
         "height": 1,
         "name": "1 antal boost",
-        "label": "<font size = 6>Boost",
+        "label": "<font size = 6>Antal boost",
         "format": "<font size = 8>{{msg.payload}}",
         "layout": "row-spread",
         "x": 470,
@@ -17066,212 +16524,17 @@
         ]
     },
     {
-        "id": "cb4bcaf10398fa50",
-        "type": "switch",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "",
-        "property": "edit",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "true"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 570,
-        "y": 2020,
-        "wires": [
-            [
-                "364a50a0d76bf122"
-            ]
-        ]
-    },
-    {
-        "id": "364a50a0d76bf122",
-        "type": "change",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "Set counter to 0",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "0",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "reset",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            },
-            {
-                "t": "set",
-                "p": "edit",
-                "pt": "flow",
-                "to": "false",
-                "tot": "bool"
-            },
-            {
-                "t": "set",
-                "p": "background.edit",
-                "pt": "msg",
-                "to": "RED",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 740,
-        "y": 2020,
-        "wires": [
-            [
-                "344963ac9df779ac",
-                "bcde4b59d218385c"
-            ]
-        ]
-    },
-    {
-        "id": "bcde4b59d218385c",
-        "type": "sum",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "",
-        "topic": "",
-        "x": 370,
-        "y": 1960,
-        "wires": [
-            [
-                "2271c5a6085332b7",
-                "fa678883d6a0041a"
-            ]
-        ]
-    },
-    {
-        "id": "e12d49488b4b5722",
-        "type": "change",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.output",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 280,
-        "y": 2020,
-        "wires": [
-            [
-                "4680a879eae6923c"
-            ]
-        ]
-    },
-    {
-        "id": "4680a879eae6923c",
-        "type": "calculator",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "div",
-        "constant": "10000",
-        "round": true,
-        "decimals": "2",
-        "x": 250,
-        "y": 1960,
-        "wires": [
-            [
-                "bcde4b59d218385c"
-            ]
-        ]
-    },
-    {
-        "id": "2271c5a6085332b7",
-        "type": "calculator",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "",
-        "inputMsgField": "payload",
-        "outputMsgField": "payload",
-        "operation": "mult",
-        "constant": "1",
-        "round": true,
-        "decimals": 0,
-        "x": 500,
-        "y": 1960,
-        "wires": [
-            [
-                "3dcd472e82454ba5"
-            ]
-        ]
-    },
-    {
-        "id": "bb0f1ad69ff34932",
-        "type": "link in",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "Json",
-        "links": [
-            "6303172e.2014a8",
-            "b085bb94.206ec8",
-            "b58b83f7.ff789"
-        ],
-        "x": 195,
-        "y": 2100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "344963ac9df779ac",
-        "type": "link out",
-        "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
-        "name": "Reset Battery",
-        "links": [
-            "d0199d3fb0a7825d"
-        ],
-        "x": 915,
-        "y": 2020,
-        "wires": []
-    },
-    {
         "id": "3dcd472e82454ba5",
         "type": "ui_button",
         "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
+        "g": "7004ce485a25266f",
         "name": "1 bat. time",
         "group": "1a7f6b0.0560695",
         "order": 5,
         "width": 2,
         "height": 1,
         "passthru": false,
-        "label": "{{msg.payload}} Min.",
+        "label": "Lap {{msg.lap }} / {{msg.heatlap}}",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -17279,19 +16542,17 @@
         "payload": "1",
         "payloadType": "num",
         "topic": "ONE",
-        "x": 690,
-        "y": 1960,
+        "x": 1090,
+        "y": 1900,
         "wires": [
-            [
-                "cb4bcaf10398fa50"
-            ]
+            []
         ]
     },
     {
         "id": "fa678883d6a0041a",
         "type": "ui_level",
         "z": "f33f01041fa1256b",
-        "g": "b2303c9bfa93b23e",
+        "g": "7004ce485a25266f",
         "group": "1a7f6b0.0560695",
         "order": 7,
         "width": 2,
@@ -17326,8 +16587,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 450,
-        "y": 2020,
+        "x": 730,
+        "y": 2160,
         "wires": []
     },
     {
@@ -17543,6 +16804,9 @@
             [
                 "c9f009a5a59638ac",
                 "48c971a35538d4f1"
+            ],
+            [
+                "928351608811d24b"
             ]
         ]
     },
@@ -17551,7 +16815,7 @@
         "type": "debug",
         "z": "f33f01041fa1256b",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17559,8 +16823,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2650,
-        "y": 100,
+        "x": 2270,
+        "y": 120,
         "wires": []
     },
     {
@@ -18235,8 +17499,8 @@
         "z": "f33f01041fa1256b",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 2435,
         "y": 780,
@@ -18254,7 +17518,7 @@
         "links": [
             "b80224545caf83e3"
         ],
-        "x": 2435,
+        "x": 2695,
         "y": 180,
         "wires": []
     },
@@ -18761,7 +18025,7 @@
         "type": "debug",
         "z": "07816be5df0ddf81",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -18770,7 +18034,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 210,
-        "y": 680,
+        "y": 780,
         "wires": []
     },
     {
@@ -18830,38 +18094,6 @@
         ]
     },
     {
-        "id": "45620d9ac6fcb105",
-        "type": "change",
-        "z": "07816be5df0ddf81",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "date"
-            },
-            {
-                "t": "delete",
-                "p": "socketid",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 580,
-        "y": 680,
-        "wires": [
-            [
-                "e658f324d6147647"
-            ]
-        ]
-    },
-    {
         "id": "6a153fa68c4f8163",
         "type": "debug",
         "z": "540c631c.a41c9c",
@@ -18873,7 +18105,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
+        "x": 510,
         "y": 540,
         "wires": []
     },
@@ -18910,12 +18142,15 @@
             ],
             [
                 "805d2d79a0a4e38b",
-                "f4ca045393c0d2bc",
-                "34ec606fdb29dc46"
+                "34ec606fdb29dc46",
+                "f4ca045393c0d2bc"
             ],
             [
                 "3fe8c0cc71e19d01",
                 "6e8bfe498d6daf6f"
+            ],
+            [
+                "8abe7021fafc8ab2"
             ]
         ]
     },
@@ -18924,7 +18159,7 @@
         "type": "debug",
         "z": "5f70722b1438c695",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -18932,8 +18167,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1490,
-        "y": 160,
+        "x": 1450,
+        "y": 80,
         "wires": []
     },
     {
@@ -19466,8 +18701,8 @@
         "z": "5f70722b1438c695",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 1275,
         "y": 840,
@@ -19483,10 +18718,13 @@
         "z": "5f70722b1438c695",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "cd1879c54642bfae",
+            "683e312ea81788f7",
+            "3572fabc6272a2d8"
         ],
-        "x": 1395,
-        "y": 240,
+        "x": 1355,
+        "y": 220,
         "wires": []
     },
     {
@@ -20102,12 +19340,14 @@
             ],
             [
                 "3501ae4e.1b1a62",
-                "e0eb2cfc.c992f",
-                "bb9888aa.ecc328"
+                "e0eb2cfc.c992f"
             ],
             [
                 "356a92eb.45390e",
                 "eff0b99.d708248"
+            ],
+            [
+                "d5faac620c5c719f"
             ]
         ]
     },
@@ -20632,8 +19872,8 @@
         "z": "fc197236.595da",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 1495,
         "y": 820,
@@ -20649,10 +19889,11 @@
         "z": "fc197236.595da",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "da93bc4d5c74711d"
         ],
-        "x": 1455,
-        "y": 260,
+        "x": 1615,
+        "y": 220,
         "wires": []
     },
     {
@@ -21303,16 +20544,19 @@
             [
                 "29034e5a4bdfef93",
                 "27eb379d699c065d",
-                "239082bb7cc140a3"
+                "239082bb7cc140a3",
+                "70f13d57648a9c97"
             ],
             [
                 "683e2b26d886527e",
-                "3623b43a65e58744",
                 "1b4a8f4ebc5f6d47"
             ],
             [
                 "0f78651c6e11a018",
                 "d2903a3b06e9e6a0"
+            ],
+            [
+                "da2afe03a184c0e7"
             ]
         ]
     },
@@ -21852,10 +21096,11 @@
         "z": "da7dc42c6a6c727b",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "8abfda0fe209fd99"
         ],
-        "x": 1635,
-        "y": 260,
+        "x": 1775,
+        "y": 220,
         "wires": []
     },
     {
@@ -22426,6 +21671,9 @@
             [
                 "6776e96d.edf758",
                 "af0098ff.f5e6d8"
+            ],
+            [
+                "6f9e58d7ff76d6c5"
             ]
         ]
     },
@@ -22950,8 +22198,8 @@
         "z": "9ef76333.a9baf",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 1315,
         "y": 780,
@@ -22967,7 +22215,8 @@
         "z": "9ef76333.a9baf",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "a5e4564e560877c4"
         ],
         "x": 1435,
         "y": 180,
@@ -23558,6 +22807,9 @@
             [
                 "715876d6.11cf68",
                 "16fc0839.b2b5b8"
+            ],
+            [
+                "129c1dd6a21e5418"
             ]
         ]
     },
@@ -24082,8 +23334,8 @@
         "z": "fb577d43.e4feb",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 1335,
         "y": 820,
@@ -24099,7 +23351,8 @@
         "z": "fb577d43.e4feb",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "13b7b94d8857a4f1"
         ],
         "x": 1455,
         "y": 220,
@@ -24684,12 +23937,14 @@
             ],
             [
                 "495fc50a.efb3dc",
-                "953b821f.c54c",
-                "1049c199.480fae"
+                "953b821f.c54c"
             ],
             [
                 "247bba16.bdbc76",
                 "a8bf53ba.c8187"
+            ],
+            [
+                "cceea8231863536a"
             ]
         ]
     },
@@ -25239,8 +24494,8 @@
         "z": "10f18fa8.2867d",
         "name": "Kill in",
         "links": [
-            "b75e47165791469f",
-            "c8359207.2830d"
+            "c8359207.2830d",
+            "b75e47165791469f"
         ],
         "x": 1295,
         "y": 760,
@@ -25256,7 +24511,8 @@
         "z": "10f18fa8.2867d",
         "name": "Finish",
         "links": [
-            "b80224545caf83e3"
+            "b80224545caf83e3",
+            "87c2a0fb29f237f0"
         ],
         "x": 1415,
         "y": 160,
@@ -25806,6 +25062,2002 @@
             [
                 "720347198004c0f3"
             ]
+        ]
+    },
+    {
+        "id": "4a5f12198655d90a",
+        "type": "switch",
+        "z": "540c631c.a41c9c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1290,
+        "y": 600,
+        "wires": [
+            [
+                "29e5a326ed8c3fc8"
+            ],
+            [
+                "c1013b234ecd8bb0"
+            ]
+        ]
+    },
+    {
+        "id": "928351608811d24b",
+        "type": "mqtt out",
+        "z": "f33f01041fa1256b",
+        "name": "",
+        "topic": "Cart01/settings",
+        "qos": "",
+        "retain": "",
+        "broker": "dca8425b.8fb18",
+        "x": 2660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "29e5a326ed8c3fc8",
+        "type": "change",
+        "z": "540c631c.a41c9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"percent\":50,\"kill\": 1}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1460,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1013b234ecd8bb0",
+        "type": "change",
+        "z": "540c631c.a41c9c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"percent\":50,\"kill\": 0}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1460,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8abe7021fafc8ab2",
+        "type": "mqtt out",
+        "z": "5f70722b1438c695",
+        "name": "",
+        "topic": "Cart2/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1500,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "da2afe03a184c0e7",
+        "type": "mqtt out",
+        "z": "da7dc42c6a6c727b",
+        "name": "",
+        "topic": "Cart3/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1900,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6f9e58d7ff76d6c5",
+        "type": "mqtt out",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "topic": "Cart4/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1540,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "129c1dd6a21e5418",
+        "type": "mqtt out",
+        "z": "fb577d43.e4feb",
+        "name": "",
+        "topic": "Cart5/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1560,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "cceea8231863536a",
+        "type": "mqtt out",
+        "z": "10f18fa8.2867d",
+        "name": "",
+        "topic": "Cart6/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1520,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d5faac620c5c719f",
+        "type": "mqtt out",
+        "z": "fc197236.595da",
+        "name": "",
+        "topic": "Cart7/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dca8425b.8fb18",
+        "x": 1720,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "265857bbb70f9f6d",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show2",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 820,
+        "wires": [
+            [
+                "553e9f0cfb031c1a"
+            ],
+            [
+                "e1edc2ae8a972808"
+            ]
+        ]
+    },
+    {
+        "id": "553e9f0cfb031c1a",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_2\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show2",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 780,
+        "wires": [
+            [
+                "c485f210c983cf62",
+                "bf16aaedc8062bd9"
+            ]
+        ]
+    },
+    {
+        "id": "e1edc2ae8a972808",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_2\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show2",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 840,
+        "wires": [
+            [
+                "c485f210c983cf62",
+                "bf16aaedc8062bd9"
+            ]
+        ]
+    },
+    {
+        "id": "e94550a469334d10",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 820,
+        "wires": [
+            [
+                "265857bbb70f9f6d"
+            ]
+        ]
+    },
+    {
+        "id": "483b100db8595249",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show3",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 960,
+        "wires": [
+            [
+                "b9716938f0432b18"
+            ],
+            [
+                "189406f868ac3191"
+            ]
+        ]
+    },
+    {
+        "id": "b9716938f0432b18",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_3\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show3",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 920,
+        "wires": [
+            [
+                "be5a5b63605a5061",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "189406f868ac3191",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_3\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show3",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 980,
+        "wires": [
+            [
+                "be5a5b63605a5061",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "a114bbc6eb57aa27",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 960,
+        "wires": [
+            [
+                "483b100db8595249"
+            ]
+        ]
+    },
+    {
+        "id": "a28bdbf340d031d4",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show4",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 1060,
+        "wires": [
+            [
+                "1f74322c02d0614b"
+            ],
+            [
+                "3166233e07c7edec"
+            ]
+        ]
+    },
+    {
+        "id": "1f74322c02d0614b",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_4\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show4",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1020,
+        "wires": [
+            [
+                "4847c09101687ce5",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "3166233e07c7edec",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_4\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show4",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1080,
+        "wires": [
+            [
+                "4847c09101687ce5",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "d4fc755084990465",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1060,
+        "wires": [
+            [
+                "a28bdbf340d031d4"
+            ]
+        ]
+    },
+    {
+        "id": "3cdab17127e09093",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show5",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 1160,
+        "wires": [
+            [
+                "073dcd3d400bb1a4"
+            ],
+            [
+                "4eeef17a61c01ffb"
+            ]
+        ]
+    },
+    {
+        "id": "073dcd3d400bb1a4",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_5\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show5",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1120,
+        "wires": [
+            [
+                "56d36102fd376fb3",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "4eeef17a61c01ffb",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_5\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show5",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1180,
+        "wires": [
+            [
+                "56d36102fd376fb3",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "7864b80812837bf5",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1160,
+        "wires": [
+            [
+                "3cdab17127e09093"
+            ]
+        ]
+    },
+    {
+        "id": "46179174f3b9f9f0",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show6",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 1260,
+        "wires": [
+            [
+                "7d9af7adedc4a718"
+            ],
+            [
+                "1dd335bd094d55b3"
+            ]
+        ]
+    },
+    {
+        "id": "7d9af7adedc4a718",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_6\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show6",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1220,
+        "wires": [
+            [
+                "bd124713dc4c6c4f",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "1dd335bd094d55b3",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_6\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show6",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1280,
+        "wires": [
+            [
+                "bd124713dc4c6c4f",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "364fc8363e6414f9",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1260,
+        "wires": [
+            [
+                "46179174f3b9f9f0"
+            ]
+        ]
+    },
+    {
+        "id": "9b35ccf41477a6c0",
+        "type": "switch",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "property": "show7",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 1360,
+        "wires": [
+            [
+                "cd682ae6bcea1fea"
+            ],
+            [
+                "5b0b0ac7c3f78a9f"
+            ]
+        ]
+    },
+    {
+        "id": "cd682ae6bcea1fea",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "hide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Race_board_GOKART_7\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show7",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1320,
+        "wires": [
+            [
+                "337cf181bf48f5f0",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "5b0b0ac7c3f78a9f",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Show",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Race_board_GOKART_7\"]}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "show7",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background",
+                "pt": "msg",
+                "to": "lime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1380,
+        "wires": [
+            [
+                "337cf181bf48f5f0",
+                "c485f210c983cf62"
+            ]
+        ]
+    },
+    {
+        "id": "1cb310acf93b3c7b",
+        "type": "change",
+        "z": "07816be5df0ddf81",
+        "name": "Del ID",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "socketid",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1360,
+        "wires": [
+            [
+                "9b35ccf41477a6c0"
+            ]
+        ]
+    },
+    {
+        "id": "59c9291696e3a624",
+        "type": "ui_text",
+        "z": "07816be5df0ddf81",
+        "group": "d88ad459.6a8ad8",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "name": "Heat time ",
+        "label": "",
+        "format": "<font size=15>{{msg.payload}} ",
+        "layout": "row-spread",
+        "x": 4920,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "92f73f638afe6fcf",
+        "type": "ui_button",
+        "z": "07816be5df0ddf81",
+        "name": "",
+        "group": "d88ad459.6a8ad8",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Show/Hide",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 310,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70f13d57648a9c97",
+        "type": "debug",
+        "z": "da7dc42c6a6c727b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1890,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cd1879c54642bfae",
+        "type": "link in",
+        "z": "5f70722b1438c695",
+        "g": "023f5c4090e3616a",
+        "name": "Batteri 2 button",
+        "links": [
+            "ab163e25156c58bc"
+        ],
+        "x": 1615,
+        "y": 1600,
+        "wires": [
+            [
+                "b32b2339bb363320"
+            ]
+        ]
+    },
+    {
+        "id": "b32b2339bb363320",
+        "type": "change",
+        "z": "5f70722b1438c695",
+        "g": "023f5c4090e3616a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 1620,
+        "wires": [
+            [
+                "2d5654434a0b3568"
+            ]
+        ]
+    },
+    {
+        "id": "aa7da06f17317472",
+        "type": "switch",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "property": "edit",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 2060,
+        "wires": [
+            [
+                "e167687eb6489609"
+            ]
+        ]
+    },
+    {
+        "id": "e167687eb6489609",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "Set counter to 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "edit",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background.edit",
+                "pt": "msg",
+                "to": "RED",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 2060,
+        "wires": [
+            [
+                "ad556882da698864",
+                "aee617a33bb2ddf7",
+                "3dcd472e82454ba5",
+                "fa678883d6a0041a"
+            ]
+        ]
+    },
+    {
+        "id": "ad556882da698864",
+        "type": "sum",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "topic": "",
+        "x": 630,
+        "y": 2000,
+        "wires": [
+            [
+                "b25ce06b7729925c",
+                "fa678883d6a0041a"
+            ]
+        ]
+    },
+    {
+        "id": "a4daf28e743d91c9",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.output",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 2060,
+        "wires": [
+            [
+                "ca84432278471a85"
+            ]
+        ]
+    },
+    {
+        "id": "ca84432278471a85",
+        "type": "calculator",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "10000",
+        "round": true,
+        "decimals": "2",
+        "x": 470,
+        "y": 2000,
+        "wires": [
+            [
+                "ad556882da698864"
+            ]
+        ]
+    },
+    {
+        "id": "b25ce06b7729925c",
+        "type": "calculator",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "1",
+        "round": true,
+        "decimals": 0,
+        "x": 820,
+        "y": 2000,
+        "wires": [
+            [
+                "3dcd472e82454ba5"
+            ]
+        ]
+    },
+    {
+        "id": "aee617a33bb2ddf7",
+        "type": "link out",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "Reset Battery",
+        "links": [
+            "d0199d3fb0a7825d",
+            "072ee9f3038b7dcb"
+        ],
+        "x": 1115,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "6c06e069c6158a9f",
+        "type": "link in",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "links": [
+            "54d21804.8a1cc8"
+        ],
+        "x": 345,
+        "y": 2040,
+        "wires": [
+            [
+                "a4daf28e743d91c9"
+            ]
+        ]
+    },
+    {
+        "id": "072ee9f3038b7dcb",
+        "type": "link in",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "Batteri 1 button",
+        "links": [
+            "aee617a33bb2ddf7",
+            "e415f12ad276bcf1"
+        ],
+        "x": 695,
+        "y": 1920,
+        "wires": [
+            [
+                "d7bf0dcf200a6122",
+                "aa7da06f17317472"
+            ]
+        ]
+    },
+    {
+        "id": "d7bf0dcf200a6122",
+        "type": "change",
+        "z": "f33f01041fa1256b",
+        "g": "7004ce485a25266f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1940,
+        "wires": [
+            [
+                "3dcd472e82454ba5"
+            ]
+        ]
+    },
+    {
+        "id": "e415f12ad276bcf1",
+        "type": "link out",
+        "z": "07816be5df0ddf81",
+        "g": "ebb52dc9fd74f9d7",
+        "name": "Fra skift batteri knap",
+        "links": [
+            "072ee9f3038b7dcb",
+            "8abfda0fe209fd99"
+        ],
+        "x": 835,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3c16ebf5698257d0",
+        "type": "switch",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "property": "edit",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 1520,
+        "wires": [
+            [
+                "51fe1a7643aa2d94"
+            ]
+        ]
+    },
+    {
+        "id": "51fe1a7643aa2d94",
+        "type": "change",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "Set counter to 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "edit",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background.edit",
+                "pt": "msg",
+                "to": "RED",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1340,
+        "y": 1520,
+        "wires": [
+            [
+                "46c20daca2cfee89",
+                "a33c2bcf8a878e6b",
+                "03b6b3cfe9fb8f33"
+            ]
+        ]
+    },
+    {
+        "id": "46c20daca2cfee89",
+        "type": "sum",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "topic": "",
+        "x": 990,
+        "y": 1460,
+        "wires": [
+            [
+                "9cf390bb388af071",
+                "d031e18b8c757382"
+            ]
+        ]
+    },
+    {
+        "id": "bc2e4d6a6e457c14",
+        "type": "change",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.output",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1520,
+        "wires": [
+            [
+                "fcb0a275502a8a54"
+            ]
+        ]
+    },
+    {
+        "id": "fcb0a275502a8a54",
+        "type": "calculator",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "10000",
+        "round": true,
+        "decimals": "2",
+        "x": 830,
+        "y": 1460,
+        "wires": [
+            [
+                "46c20daca2cfee89"
+            ]
+        ]
+    },
+    {
+        "id": "9cf390bb388af071",
+        "type": "calculator",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "1",
+        "round": true,
+        "decimals": 0,
+        "x": 1180,
+        "y": 1460,
+        "wires": [
+            [
+                "03b6b3cfe9fb8f33"
+            ]
+        ]
+    },
+    {
+        "id": "a33c2bcf8a878e6b",
+        "type": "link out",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "Reset Battery",
+        "links": [
+            "d0199d3fb0a7825d"
+        ],
+        "x": 1455,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "0ae33a3eeba674c9",
+        "type": "link in",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "links": [
+            "54d21804.8a1cc8"
+        ],
+        "x": 705,
+        "y": 1500,
+        "wires": [
+            [
+                "bc2e4d6a6e457c14"
+            ]
+        ]
+    },
+    {
+        "id": "8abfda0fe209fd99",
+        "type": "link in",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "Batteri 2 button",
+        "links": [
+            "29034e5a4bdfef93",
+            "e415f12ad276bcf1"
+        ],
+        "x": 1055,
+        "y": 1380,
+        "wires": [
+            [
+                "cb11e443d65ddc0e",
+                "3c16ebf5698257d0"
+            ]
+        ]
+    },
+    {
+        "id": "cb11e443d65ddc0e",
+        "type": "change",
+        "z": "da7dc42c6a6c727b",
+        "g": "d1c1e056c45cf8e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 1400,
+        "wires": [
+            [
+                "03b6b3cfe9fb8f33"
+            ]
+        ]
+    },
+    {
+        "id": "c939aae221b652c9",
+        "type": "switch",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "property": "edit",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 1500,
+        "wires": [
+            [
+                "c76b5a7f92cb1b4d"
+            ]
+        ]
+    },
+    {
+        "id": "c76b5a7f92cb1b4d",
+        "type": "change",
+        "z": "9ef76333.a9baf",
+        "name": "Set counter to 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "reset",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "edit",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "background.edit",
+                "pt": "msg",
+                "to": "RED",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 1500,
+        "wires": [
+            [
+                "3e4adee7379a72f2",
+                "6df49e2b7b65405f",
+                "fe3c076d.7c0a98"
+            ]
+        ]
+    },
+    {
+        "id": "3e4adee7379a72f2",
+        "type": "sum",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "topic": "",
+        "x": 690,
+        "y": 1440,
+        "wires": [
+            [
+                "1eb5f7e21c67d22b",
+                "4c62335c.a5d71c"
+            ]
+        ]
+    },
+    {
+        "id": "ab72dd8c461638a6",
+        "type": "change",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.output",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1500,
+        "wires": [
+            [
+                "451975ae87df49dc"
+            ]
+        ]
+    },
+    {
+        "id": "451975ae87df49dc",
+        "type": "calculator",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "div",
+        "constant": "10000",
+        "round": true,
+        "decimals": "2",
+        "x": 530,
+        "y": 1440,
+        "wires": [
+            [
+                "3e4adee7379a72f2"
+            ]
+        ]
+    },
+    {
+        "id": "1eb5f7e21c67d22b",
+        "type": "calculator",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "mult",
+        "constant": "1",
+        "round": true,
+        "decimals": 0,
+        "x": 880,
+        "y": 1440,
+        "wires": [
+            [
+                "fe3c076d.7c0a98"
+            ]
+        ]
+    },
+    {
+        "id": "6df49e2b7b65405f",
+        "type": "link out",
+        "z": "9ef76333.a9baf",
+        "name": "Reset Battery",
+        "links": [
+            "d0199d3fb0a7825d"
+        ],
+        "x": 1155,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "cf101b15312c9e5b",
+        "type": "link in",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "links": [],
+        "x": 405,
+        "y": 1480,
+        "wires": [
+            [
+                "ab72dd8c461638a6"
+            ]
+        ]
+    },
+    {
+        "id": "a5e4564e560877c4",
+        "type": "link in",
+        "z": "9ef76333.a9baf",
+        "name": "Batteri 2 button",
+        "links": [
+            "a087765409c2e10e"
+        ],
+        "x": 755,
+        "y": 1360,
+        "wires": [
+            [
+                "6fa166ca6e587148",
+                "c939aae221b652c9"
+            ]
+        ]
+    },
+    {
+        "id": "6fa166ca6e587148",
+        "type": "change",
+        "z": "9ef76333.a9baf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1380,
+        "wires": [
+            [
+                "fe3c076d.7c0a98"
+            ]
+        ]
+    },
+    {
+        "id": "13b7b94d8857a4f1",
+        "type": "link in",
+        "z": "fb577d43.e4feb",
+        "g": "c2364a89.dd5338",
+        "name": "",
+        "links": [
+            "5549af26be7611bc"
+        ],
+        "x": 695,
+        "y": 1380,
+        "wires": [
+            [
+                "f03698989dd4fe28"
+            ]
+        ]
+    },
+    {
+        "id": "87c2a0fb29f237f0",
+        "type": "link in",
+        "z": "10f18fa8.2867d",
+        "g": "df5df470.e66c08",
+        "name": "",
+        "links": [
+            "c093eb32eebfce2c"
+        ],
+        "x": 815,
+        "y": 1120,
+        "wires": [
+            [
+                "891987c786be1c37"
+            ]
+        ]
+    },
+    {
+        "id": "da93bc4d5c74711d",
+        "type": "link in",
+        "z": "fc197236.595da",
+        "g": "cb3985a8.43f6c8",
+        "name": "",
+        "links": [
+            "6963335df828bff2"
+        ],
+        "x": 535,
+        "y": 1140,
+        "wires": [
+            [
+                "d19a4052.04b3f"
+            ]
+        ]
+    },
+    {
+        "id": "f03698989dd4fe28",
+        "type": "change",
+        "z": "fb577d43.e4feb",
+        "g": "c2364a89.dd5338",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1360,
+        "wires": [
+            [
+                "8fd02576.a78f98"
+            ]
+        ]
+    },
+    {
+        "id": "891987c786be1c37",
+        "type": "change",
+        "z": "10f18fa8.2867d",
+        "g": "df5df470.e66c08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1140,
+        "wires": [
+            [
+                "cde1e696.fedb78"
+            ]
+        ]
+    },
+    {
+        "id": "f4db880fc6e8a624",
+        "type": "change",
+        "z": "fc197236.595da",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "heatlap",
+                "pt": "msg",
+                "to": "setlap",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 1140,
+        "wires": [
+            []
         ]
     }
 ]
